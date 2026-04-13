@@ -207,7 +207,7 @@ Shows the static HTML page with visible HNG username.
 ### API Endpoint
 Proof of valid JSON response over HTTPS.
 
-![API Response](./screenshots/api-response.png)
+![API Response](./screenshots/api-terminal-response.png) [API Response](./screenshots/api-web-response.png)
 
 ### SSL Certificate
 Valid Let's Encrypt certificate details from browser.
