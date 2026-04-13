@@ -197,8 +197,6 @@ ssh hngdevops@98.90.141.125
 
 ## Evidence / Screenshots
 
-## Evidence / Screenshots
-
 ### Root Endpoint
 Shows the static HTML page with visible HNG username.
 
