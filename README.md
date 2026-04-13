@@ -197,16 +197,37 @@ ssh hngdevops@98.90.141.125
 
 ## Evidence / Screenshots
 
-Store proof artifacts inside `/screenshots`.
+## Evidence / Screenshots
 
-Recommended captures:
+### Root Endpoint
+Shows the static HTML page with visible HNG username.
 
-* Root page in browser
-* `/api` terminal response
-* SSL certificate lock details
-* `ufw status`
-* `systemctl status nginx`
-* HNG grading result
+![Root Page](./screenshots/root-page.png)
+
+### API Endpoint
+Proof of valid JSON response over HTTPS.
+
+![API Response](./screenshots/api-response.png)
+
+### SSL Certificate
+Valid Let's Encrypt certificate details from browser.
+
+![SSL Certificate](./screenshots/ssl-valid.png)
+
+### UFW Status
+Host firewall allowing only approved ports.
+
+![UFW Status](./screenshots/ufw-status.png)
+
+### Nginx Service Status
+Proof that Nginx is the active web server.
+
+![Nginx Status](./screenshots/nginx-status.png)
+
+### HNG Grading Result
+Final evaluation proof.
+
+![HNG Result](./screenshots/grading-report.png)
 
 ```text
 screenshots/
