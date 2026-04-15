@@ -1,0 +1,29 @@
+server {
+    listen 80;
+    server_name mosesekerin.name.ng;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name mosesekerin.name.ng;
+
+    ssl_certificate /etc/letsencrypt/live/mosesekerin.name.ng/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/mosesekerin.name.ng/privkey.pem;
+
+    location = / {
+        default_type text/html;
+        return 200 '<!DOCTYPE html>
+<html>
+<head><title>HNG Stage 0</title></head>
+<body>
+<h1>Timileyin-Your-SRE-Guy</h1>
+</body>
+</html>';
+    }
+
+    location = /api {
+        default_type application/json;
+        return 200 '{"message":"HNGI14 Stage 1","track":"DevOps","username":"Timileyin-Your-SRE-Guy"}';
+    }
+}
